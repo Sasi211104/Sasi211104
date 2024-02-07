@@ -1,27 +1,37 @@
 import java.util.Scanner;
-
-public class {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-
-        System.out.println("Enter any two positive integer numbers:");
-
-        // Reading data using readLine
-        int p = in.nextInt();
-        int q = in.nextInt();
-        int sum, sub, mul, mod;
-        float div;
-
-        sum = p + q;
-        sub = p - q;
-        mul = p * q;
-        div = p / q;
-        mod = p % q;
-
-        System.out.println("\nSUM         " + p + " + " + q + " = " + sum);
-        System.out.println("DIFFERENCE  " + p + " - " + q + " = " + sub);
-        System.out.println("PRODUCT     " + p + " * " + q + " = " + mul);
-        System.out.println("QUOTIENT    " + p + " / " + q + " = " + div);
-        System.out.println("MODULUS     " + p + " % " + q + " = " + mod);
+class Calculator
+{
+  public static void main(String[] args)
+  {
+    float a,b;
+    int choice;
+    Scanner input=new Scanner(System.in);
+    System.out.print("Enter the value of a,b values : ");
+    a=input.nextFloat();
+    b=input.nextFloat();
+  System.out.print("Enter 1. ADDITION  2. SUBTRACTION  3. MULTIPLICATION  4. DIVISION : \n");
+    choice=input.nextInt();
+    //input.close();
+    if(choice==1)
+    {
+      System.out.print("The sum : "+a+" and "+b+" is "+(a+b));
     }
+    else if(choice==2)
+    {
+      System.out.print("The difference : "+a+" and "+b+" is "+(a-b));
+    }
+    else if(choice==3)
+    {
+      System.out.print("The product : "+a+" and "+b+" is "+(a*b));
+    }
+    else if(choice==4)
+    {
+      System.out.print("The quotient : "+a+" and "+b+" is "+(a/b));
+    }
+    else
+    {
+      System.out.print("Enter valid choice!!\nPlease try again!!\n");
+    }
+  }
 }
+
