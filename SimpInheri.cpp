@@ -14,5 +14,7 @@ class subclass: public superclass{
 };
 int main(){
     subclass obj;
+    cout<<"The sum of"<<obj.a <<"+"<<obj.b<<"+"<< obj.c <<"is : "<<endl;
     cout<<(obj.a+obj.b+obj.c)<<endl;
 }
+
