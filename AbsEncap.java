@@ -17,7 +17,7 @@ class AccessSpecifierDemo{
         System.out.println("public variable : "+pubvar);
         System.out.println("private variable : "+privar);
         System.out.println("protected variable : "+provar);
-        , int pubValue
+        int pubValue;
     }
 }
 class AbsEncap{
